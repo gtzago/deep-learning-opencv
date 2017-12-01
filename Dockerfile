@@ -24,7 +24,7 @@ RUN cd /home/$NB_USER/libgpuarray && \
     rm -R /home/$NB_USER/libgpuarray
 
 USER root
-RUN pip3 install keras jupyter tensorflow
+RUN pip3 install tensorflow-gpu keras jupyter
 
 USER $NB_USER    
 
